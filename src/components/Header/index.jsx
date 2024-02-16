@@ -1,7 +1,7 @@
 import styles from "./header.module.css";
 import { useState } from "react";
 import Swal from "sweetalert2";
-import { IoAdd } from "react-icons/io5";
+import { FaPlus } from "react-icons/fa";
 
 export function Header({
   handleAddTask,
@@ -66,7 +66,7 @@ export function Header({
         />
         <button className={styles.addButton}>
           Add
-          <IoAdd size={20} />
+          <FaPlus size={17} />
         </button>
       </form>
 

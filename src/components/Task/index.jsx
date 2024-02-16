@@ -1,8 +1,7 @@
 import { useState } from "react";
 import styles from "./task.module.css";
-import { BsFillCheckCircleFill } from "react-icons/bs";
-import { FaRegEdit } from "react-icons/fa";
-import { TbTrash } from "react-icons/tb";
+
+import { FaTrash, FaPencilAlt, FaCheckCircle, FaCircle } from "react-icons/fa";
 import Swal from "sweetalert2";
 
 export function Task({ task, onDelete, onComplete, onEdit }) {
@@ -52,7 +51,7 @@ export function Task({ task, onDelete, onComplete, onEdit }) {
           className={styles.checkContainer}
           onClick={() => onComplete(task.id)}
         >
-          {task.isCompleted ? <BsFillCheckCircleFill /> : <div />}
+          {task.isCompleted ? <FaCheckCircle /> : <FaCircle />}
         </button>
 
         {isEditing && (
@@ -97,14 +96,14 @@ export function Task({ task, onDelete, onComplete, onEdit }) {
 
           <div className={styles.buttonsContainer}>
             <button className={styles.editButton} onClick={handleEdit}>
-              <FaRegEdit size={23} />
+              <FaPencilAlt size={20} />
             </button>
 
             <button
               className={styles.deleteButton}
               onClick={() => handleDelete(task.id)}
             >
-              <TbTrash size={23} />
+              <FaTrash size={20} />
             </button>
           </div>
         </div>
