@@ -1,5 +1,5 @@
 .header {
-  background: linear-gradient(to right, #f4512c, #5e1b89);
+  /* background: linear-gradient(to right, #f4512c, #5e1b89); */
   height: 110px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -53,13 +53,12 @@
 }
 
 .newTaskForm button:hover {
-  background: #9d71bc; 
+  background: #9d71bc;
 }
-
 
 .buttonContainer {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   margin-top: 18px;
   margin-left: 0%;
 }
@@ -84,12 +83,12 @@
   border-radius: 5px;
   cursor: pointer;
   /* margin-right: 100px; */
-  background-color: #ff7f4d; 
-  color: #fff; 
+  background-color: #ff7f4d;
+  color: #fff;
 }
 
 .clearButton:hover {
-  background-color: #9d71bc; 
+  background-color: #9d71bc;
 }
 
 .doneButton {
@@ -114,11 +113,11 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  
-  background-color: #ff7f4d; 
-  color: #fff; 
+
+  background-color: #ff7f4d;
+  color: #fff;
 }
 
 .selectAllButton:hover {
-  background-color: #9d71bc; 
+  background-color: #9d71bc;
 }
