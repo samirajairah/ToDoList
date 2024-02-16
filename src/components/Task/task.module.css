@@ -37,9 +37,9 @@ p.creationDate {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  font-size: 10px; 
+  font-size: 10px;
   color: #808080;
-  margin-top: 5px; 
+  margin-top: 5px;
   margin-bottom: 5px;
 }
 
@@ -121,19 +121,18 @@ p.creationDate {
 
 .saveButton,
 .cancelButton {
-  padding: 10px 60px;
+  padding: 10px 30px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   font-size: 100%;
-  margin-top: 15px;
-  margin-left: 45px;
+  margin-top: 8px;
+  margin-left: 60px;
 }
 
 .saveButton {
   background-color: #268bd2;
   color: white;
- 
 }
 
 .cancelButton {
