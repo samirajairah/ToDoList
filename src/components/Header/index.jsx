@@ -1,6 +1,7 @@
 import styles from "./header.module.css";
 import { useState } from "react";
 import Swal from "sweetalert2";
+import { IoAdd } from "react-icons/io5";
 
 export function Header({
   handleAddTask,
@@ -54,7 +55,10 @@ export function Header({
           onChange={onChangeTitle}
           value={title}
         />
-        <button className={styles.addButton}>Add</button>
+        <button className={styles.addButton}>
+          Add
+          <IoAdd size={20} />
+        </button>
       </form>
 
       <div className={styles.buttonContainer}>
