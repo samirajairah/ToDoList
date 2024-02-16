@@ -14,6 +14,15 @@ export function Header({
 
   function handleSubmit(event) {
     event.preventDefault();
+
+    if (title.trim() === "") {
+      Swal.fire({
+        icon: "warning",
+        title: "Oops...",
+        text: "Please enter a task before adding!",
+      });
+      return;
+    }
     handleAddTask(title);
     setTitle("");
   }
